@@ -40,6 +40,8 @@ public class CustomerOneDimList {
 		driver.findElement(By.id("telephoneno")).sendKeys(cus.get(4));
 	}
 
+	
+	
 	@When("user need to click submit btn.")
 	public void user_need_to_click_submit_btn() {
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
@@ -51,7 +53,7 @@ public class CustomerOneDimList {
 		WebElement cusId = driver.findElement(By.xpath("//td[@align='center']//h3"));
 		String text = cusId.getAttribute("value");
 		System.out.println(text);
-		driver.quit();
+		
 	}
 
 

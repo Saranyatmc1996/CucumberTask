@@ -4,7 +4,7 @@ Feature: Title of your feature
   Scenario: To check addcustomer functionality
     Given User in telecom home page
     And user need to click on Add Customer button
-    When user need to fill all the detail
+    When user need to fill all the details
     And user need to click submit button
     Then user should see the customer id is generated
 
