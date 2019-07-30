@@ -1,7 +1,7 @@
-
+@regression
 Feature: Title of your feature
   I want to use this template for my feature file
-
+@unit
   Scenario: To check add customer functionality
     Given User in telecom Homepage
     And user click on Add Customer button

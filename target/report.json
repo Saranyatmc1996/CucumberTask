@@ -1,0 +1,247 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "To check add customer functionality",
+        "description": "",
+        "id": "title-of-your-feature;to-check-add-customer-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 21540470099,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User in telecom Homepage",
+            "match": {
+              "location": "AddCustMap.user_in_telecom_Homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2782079667,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click on Add Customer button",
+            "match": {
+              "location": "AddCustMap.user_click_on_Add_Customer_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence\r\n\tat org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)\r\n\tat com.stepdefinition.AddCustMap.user_need_to_fill_all_personal_details(AddCustMap.java:39)\r\n\tat ✽.user need to fill all personal details(src/test/resources/AddCustMap.feature:8)\r\n",
+              "duration": 2963594497,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "user need to fill all personal details",
+            "match": {
+              "location": "AddCustMap.user_need_to_fill_all_personal_details(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Fname",
+                  "saranya"
+                ]
+              },
+              {
+                "cells": [
+                  "Lname",
+                  "T"
+                ]
+              },
+              {
+                "cells": [
+                  "Email",
+                  "sarayatmc@gmail.com"
+                ]
+              },
+              {
+                "cells": [
+                  "Address",
+                  "Dindigul"
+                ]
+              },
+              {
+                "cells": [
+                  "Mobile",
+                  "7339595826"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 27990,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "user need to click on submit button",
+            "match": {
+              "location": "AddCustMap.user_need_to_click_on_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17727,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "user should see the customer ID is generated",
+            "match": {
+              "location": "AddCustMap.user_should_see_the_customer_ID_is_generated()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@unit"
+          }
+        ]
+      }
+    ],
+    "name": "Title of your feature",
+    "description": "  I want to use this template for my feature file",
+    "id": "title-of-your-feature",
+    "keyword": "Feature",
+    "uri": "src/test/resources/AddCustMap.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "to check Add Tariff functionality",
+        "description": "",
+        "id": "title-of-your-feature;to-check-add-tariff-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9791109669,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user in telecom page",
+            "match": {
+              "location": "AddTariffClass.user_in_telecom_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2546223886,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "need to click add tariff button",
+            "match": {
+              "location": "AddTariffClass.need_to_click_add_tariff_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3720994555,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "need to fill all the details",
+            "match": {
+              "location": "AddTariffClass.need_to_fill_all_the_details(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "500",
+                  "90",
+                  "15",
+                  "100",
+                  "1",
+                  "5",
+                  "1"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3370315428,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "need to click submit button",
+            "match": {
+              "location": "AddTariffClass.need_to_click_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3912850714,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user should see the successfully compeletion page",
+            "match": {
+              "location": "AddTariffClass.user_should_see_the_successfully_compeletion_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@saranya"
+          }
+        ]
+      }
+    ],
+    "name": "Title of your feature",
+    "description": "  I want to use this template for my feature file",
+    "id": "title-of-your-feature",
+    "keyword": "Feature",
+    "uri": "src/test/resources/AddTariff.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
