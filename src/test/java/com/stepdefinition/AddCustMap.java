@@ -36,7 +36,7 @@ public class AddCustMap {
 		driver.findElement(By.xpath("//label[@for='done']")).click();
 		driver.findElement(By.xpath("//input[@id='fname']")).sendKeys(cusMap.get("Fname"));
 		driver.findElement(By.id("lname")).sendKeys(cusMap.get("Lname"));
-		driver.findElement(By.id("email")).sendKeys(cusMap.get("Email"));
+		driver.findElement(By.id("email")).sendKeys(cusMap.get("id"));
 		driver.findElement(By.xpath("//textarea[@id='message']")).sendKeys(cusMap.get("Address"));
 		driver.findElement(By.id("telephoneno")).sendKeys(cusMap.get("Mobile"));
 	}
@@ -49,11 +49,9 @@ public class AddCustMap {
 	@Then("user should see the customer ID is generated")
 	public void user_should_see_the_customer_ID_is_generated() {
 		Assert.assertTrue(driver.findElement(By.xpath("//td[@align='center']//h3")).isDisplayed());
-		WebElement cusId = driver.findElement(By.xpath("//td[@align='center']//h3"));
-		String text = cusId.getAttribute("value");
+		WebElement thead = driver.findElement(By.tagName("h3"));
+		String text = thead.getText();
 		System.out.println(text);
-		driver.quit();
+	
 	}
-
-
 }

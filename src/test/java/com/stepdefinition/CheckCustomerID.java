@@ -63,9 +63,11 @@ public class CheckCustomerID {
 	public void user_should_see_the_customer_id_is_generated() {
 
 		Assert.assertTrue(driver.findElement(By.xpath("//td[@align='center']//h3")).isDisplayed());
-		WebElement cusId = driver.findElement(By.xpath("//td[@align='center']//h3"));
-		String text = cusId.getAttribute("value");
+		WebElement thead = driver.findElement(By.tagName("h3"));
+		String text = thead.getText();
 		System.out.println(text);
+	
+		
 		driver.quit();
 	}
 

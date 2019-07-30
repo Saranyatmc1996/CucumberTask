@@ -1,6 +1,7 @@
+@regression
 Feature: Title of your feature
   I want to use this template for my feature file
-
+@smoke @saranya
   Scenario: to check Add Tariff functionality
     Given user in telecom page
     And need to click add tariff button
